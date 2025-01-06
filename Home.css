@@ -332,7 +332,8 @@ body, html {
     border-radius: 20px;
     display: inline-block;
     margin: 70px;
-    background-color:rgba(14, 232, 112,0.8);
+    background: linear-gradient(to right, rgba(0, 0, 0,0.3), rgba(255, 255, 255));
+
     text-align: center;      
 }
 .card p{
@@ -520,6 +521,7 @@ body, html {
 
 .btn:hover{
  background-color: #4f5250;
+ background-color: green;
  
 }
 #Read_more_btn:hover{

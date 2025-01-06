@@ -1,0 +1,375 @@
+*{
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+     height: 100%; 
+    overflow-x: hidden; 
+}
+
+.container {
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.header{
+    height: auto;
+    width: 100%;
+    background-color: white; 
+    box-sizing: border-box;
+    position: fixed; 
+    top: 0;
+    z-index: 1000; 
+    justify-content: center;
+    padding: 0 2rem;
+    display: flex;
+    align-content: center;
+    box-shadow:  2px 2px rgb(45, 250, 93,0.1)
+
+}
+.leftDiv{
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+}
+.rightDiv{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: flex-end;
+    padding: 0 0.5rem;
+    align-items: center;
+}
+.logincontainer{
+    padding: 0;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    gap: 1rem;    
+    padding: 0;
+    width: 50%;
+}
+.options li{
+    padding: 0;
+    display: flex ;
+    gap: 1rem;
+    text-align: center;
+    align-self: center;
+    justify-content: space-between;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#logo{
+    margin-left: 0;
+    display: flex;
+    font-size: 40px;
+    justify-self: left;
+    letter-spacing: 2px;
+    
+}
+#sastaLogo{
+    
+    height: 2rem;
+    width: 2rem;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 900;
+    display: flex;
+    line-height: 2rem;
+    align-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color:rgba(14, 232, 112,0.8);
+    text-align: center;    
+}
+.rightDiv .logincontainer ul {
+    display: flex;
+    gap: 3rem; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.rightDiv .logincontainer li {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header li{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bold;
+}
+.header li a{
+    height: 100%;
+    text-decoration: none;
+    justify-content: space-between; 
+    color: black;   
+}
+.profile{
+    height: 2rem;
+    width: 2rem;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 900;
+    display: flex;
+    line-height: 2rem;
+    align-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-size: cover;
+  background-image: url(black_prsn.png);  
+}
+
+/* BODY */
+
+.main{
+    /* height: 500px; */
+    height: 600px; 
+    width: auto;
+    padding: 0;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;  
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    background-color: rgba(128, 128, 128,0.1);
+
+}
+
+.image{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url(Blankprsn.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+    
+} 
+#edit{
+    height: 2rem;
+    width: 2rem;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 900;
+    display: flex;
+    margin-top: 10px;
+    margin: 0px;
+    background-color:white;
+    text-align: center; 
+    opacity: 0;
+    background-image: url(edit.png);
+    background-size: cover ;
+    transition: bottom 0.3s ease; 
+ }
+
+.profileDiv{
+    margin-top: 50px;
+    height: 400px;
+    width: 35%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 60%;
+    margin-top: 50px;
+    border: 1px solid white;
+    border-radius: 10px; 
+    background-color: white;
+    align-items: flex-start;
+    position: relative;
+
+}
+#edit2{
+    height: 2rem;
+    width: 2rem; 
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column; 
+    margin-right: 10px; 
+    position: absolute;
+    background-color:white;
+    align-self: flex-end;
+    background-image: url(edit.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+
+.bio{
+    height: 200px;
+    width: 48%;
+    padding-top: 2rem;
+    background: linear-gradient(to bottom, rgb(255, 255, 255,0.5));
+    background: linear-gradient(45deg ,rgb(45, 250, 93,0.2)) ;
+    background-color: white;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-items: center;
+    justify-content: left;
+    align-self: center;
+    text-align: left;
+}
+.bio input {
+    width: 90%; 
+    height: 20%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+   
+}
+
+.main2{
+    /* height: 500px; */
+    height: 700px; 
+    width: 100%;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;  
+    background-color: rgba(128, 128, 128,0.1);
+    overflow: hidden;
+    text-align: center;
+}
+.prsnlInfo{
+    height: 500px;
+    width: 35%; 
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white; 
+    border: 1px solid white;
+    border-radius: 10px;
+
+}
+#edit3{
+    height: 2rem;
+    width: 2rem; 
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 900;
+    display: flex;
+    flex-direction: row; 
+    margin-right: 10px; 
+    background-color:white;
+    align-self: flex-end;
+    background-image: url(edit.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+.contestRanking{
+    display: grid;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    height: 600px;
+    width: 60%;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white; 
+    align-items: flex-start;
+
+}
+.main3{
+    height: 500px; 
+    width: 100%;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    display: flex;
+    flex-direction:row ;
+    background-color: rgba(128, 128, 128,0.1);
+    overflow: hidden;
+    justify-items: flex-end;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    height: 300px;
+    width: 60%;
+    margin-left: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: flex-start;
+}
+#saveBtn{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-top:20px ;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.image:hover #edit {
+    opacity: 1;
+}
+.header li a:hover{
+    color: rgb(68, 214, 68);
+}
